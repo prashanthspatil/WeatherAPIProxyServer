@@ -12,7 +12,7 @@ const API_KEY_VALUE = process.env.WEATHER_API_KEY_VALUE
 let cache = apicache.middleware
 
 // Cache config
-WEATHER_API_CACHE_INTERVAL= "0 minutes"
+WEATHER_API_CACHE_INTERVAL= "1 minutes"
 
 // Give cache respose for defined interval
 router.get('/', cache(WEATHER_API_CACHE_INTERVAL), async (req, res) => {
