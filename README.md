@@ -1,0 +1,2 @@
+- heroku git:remote -a psp-weather-app
+- git push heroku master

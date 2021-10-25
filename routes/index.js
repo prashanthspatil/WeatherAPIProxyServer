@@ -14,7 +14,7 @@ let cache = apicache.middleware
 // Cache config
 WEATHER_API_CACHE_INTERVAL= "0 minutes"
 
-// Give cache respose for 2 minutes
+// Give cache respose for defined interval
 router.get('/', cache(WEATHER_API_CACHE_INTERVAL), async (req, res) => {
     try {
         const params = new URLSearchParams({
