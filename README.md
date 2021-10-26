@@ -1,2 +1,3 @@
 - heroku git:remote -a psp-weather-app
+- git commit -m 'commit message'
 - git push heroku master

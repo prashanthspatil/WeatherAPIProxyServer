@@ -7,9 +7,9 @@ const PORT = process.env.PORT || 5000
 
 const app = express()
 
-// Allow upto 5 requests in 10 mins window
+// Allow upto 'max' requests in 'windowMs' window
 const limiter = rateLimit({
-    windowMs: 10 * 60 * 1000, // 10 mins
+    windowMs: 1 * 60 * 1000, // 1 mins (convert to milliseconds)
     max: 5,
 })
 app.use(limiter)
